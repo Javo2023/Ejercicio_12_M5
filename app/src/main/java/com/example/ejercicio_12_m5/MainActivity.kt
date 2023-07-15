@@ -75,8 +75,10 @@ fun main(){
 
 
     }
-    for(u in usuarios){
-        println(u)
+    for(u in usuarios.sortedBy {
+        usuario -> usuario.edad
+    }){
+        println("$u")
 
     }
 
